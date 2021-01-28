@@ -10,12 +10,12 @@ form.addEventListener('submit', (e) => {
         name: formData.get('username'),
         pokemon: formData.get('starters'),
         hp: 100,
-        willpower: 10;
+        willpower: 10,
         completed: {}
     }
 
     const stringyUser = JSON.stringify(user);
     localStorage.setItem('USER', stringyUser);
 
-    window.location = '../map/map.js';
+    window.location = '../map/index.html';
 });
