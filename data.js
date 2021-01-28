@@ -1,6 +1,6 @@
 const battleOne = {
     id: 'snorlax',
-    title: 'A very big problem...',
+    title: 'A Big Problem',
     map: {
         top: '89%',
         left: '44%'
@@ -88,7 +88,7 @@ const battleTwo = {
 
 const battleThree = {
     id: 'jigglypuff',
-    title: 'A Golden Treasure',
+    title: 'Sleepy Time',
     map: {
         top: '31%',
         left: '5%'

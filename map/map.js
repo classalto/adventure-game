@@ -4,15 +4,27 @@ import quests from '../data.js';
 // list item target element
 const ul = document.querySelector('ul');
 
+const user = JSON.parse(localStorage.getItem('USER'));
 
-// create quests li elements
-const mapItem1 = document.createElement('li');
-const mapItem2 = document.createElement('li');
-const mapItem3 = document.createElement('li');
+let completedAllQuests = true;
 
-// define map item text content
-mapItem1.textContent = quests[0].title;
-mapItem2.textContent = quests[1].title;
-mapItem3.textContent = quests[2].title;
+for (let quest of quests) {
+    if (!user.completed[quest.id]) {
+        completedAllQuests = false;
+    }
+}
 
-ul.append(mapItem1, mapItem2, mapItem3);
+if (user.hp <= 0 || user.willpower <= 0 || completedAllQuests) {
+    window.location = '../results';
+}
+
+for (let quest of quests) {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+
+    a.textContent = quest.title;
+    a.href = `../quest/?id=${quest.id}`;
+
+    li.append(a);
+    ul.append(li);
+}
