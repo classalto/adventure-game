@@ -5,7 +5,7 @@ const battleOne = {
         top: '89%',
         left: '44%'
     },
-    image: 'monsters.jpg',
+    image: 'snorlax.svg',
     description: `
         You stumble across a massive Pokemon... 
         You've never seen a Pokemon as big as this one. 
@@ -52,6 +52,7 @@ const battleTwo = {
         top: '17%',
         left: '37%'
     },
+    image: 'beedrill.svg',
     description: `
         Mid way through your journey you hear a distinct buzz... what is that sound? You look behind you and theres a swarm of beedrill right on your tail!
          What do you do?
@@ -93,6 +94,7 @@ const battleThree = {
         top: '31%',
         left: '5%'
     },
+    image: 'jigglypuff.svg',
     description: `
         As you enter the quest chamber you notice three chests before you.
         Just as you start to imagine the wealth, you see a giant serpent
