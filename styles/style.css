@@ -89,7 +89,7 @@ p {
 }
   
 footer {
-    position: fixed;
+    position: static;
     width: 100%;
     bottom: 0;
     height: var(--footer-height);
@@ -117,3 +117,9 @@ footer {
     }
 
   }
+
+  .quest-main {
+      font-weight: bolder;
+      height: fit-content;
+  }
+

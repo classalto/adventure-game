@@ -43,8 +43,8 @@ form.addEventListener('submit', (e) => {
     const choice = findById(quest.choices, userSelects);
     const user = JSON.parse(localStorage.getItem('USER'));
     
-    user.hp = choice.hp;
-    user.willpower = choice.willpower;
+    user.hp += choice.hp;
+    user.willpower += choice.willpower;
     user.completed[questId] = true;
 
     //set in storage

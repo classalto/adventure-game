@@ -6,5 +6,5 @@ export function makeUser(formData) {
         willpower: 10,
         completed: {}
     };
-    console.log(user);
+    return user;
 }
