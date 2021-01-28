@@ -15,7 +15,7 @@ for (let quest of quests) {
 }
 
 if (user.hp <= 0 || user.willpower <= 0 || completedAllQuests) {
-    window.location = '../results';
+    window.location = '../result';
 }
 
 for (let quest of quests) {
@@ -23,7 +23,7 @@ for (let quest of quests) {
     const a = document.createElement('a');
 
     a.textContent = quest.title;
-    a.href = `../quest/?id=${quest.id}`;
+    a.href = `../quests/?id=${quest.id}`;
 
     li.append(a);
     ul.append(li);
