@@ -2,6 +2,7 @@
 const form = document.querySelector('form');
 
 
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     
@@ -13,14 +14,10 @@ form.addEventListener('submit', (e) => {
         hp: 100,
         willpower: 10,
         completed: {}
-    }
+    };
     
     const stringyUser = JSON.stringify(user);
     localStorage.setItem('USER', stringyUser);
     
-    window.location = '../map/index.html';
+    window.location = '../map/map.html';
 });
-
-const button = document.createElement(button);
-button.textContent = 'Start your adventure!';
-form.appendChild(button);

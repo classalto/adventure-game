@@ -13,17 +13,13 @@ header img {
 }
 
 main {
-    position: absolute;
     width: 100%;
     height: 80%;
 }
 
-img {
-    width: 100%;
-    height: 100%;
+label img {
+    width: 100px;
+    height: 100px;
 }
 
-li {
-    position: relative;
-}
 
