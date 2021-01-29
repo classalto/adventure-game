@@ -3,7 +3,7 @@ import { saveUser, makeUser } from './playerUtils.js';
 // import functions and grab DOM elements
 const form = document.querySelector('form');
 
-
+console.log('hello');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -15,4 +15,5 @@ form.addEventListener('submit', (e) => {
     saveUser(userData);
     
     window.location = '../maps/';
+    
 });
