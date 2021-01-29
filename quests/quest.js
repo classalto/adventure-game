@@ -49,5 +49,5 @@ form.addEventListener('submit', (e) => {
 
     //set in storage
     localStorage.setItem('USER', JSON.stringify(user));
-    window.location = '../maps/index.html';
+    window.location = '../maps';
 });
