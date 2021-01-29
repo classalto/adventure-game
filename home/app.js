@@ -1,3 +1,5 @@
+import { saveUser, makeUser } from './playerUtils.js';
+
 // import functions and grab DOM elements
 const form = document.querySelector('form');
 
@@ -8,16 +10,9 @@ form.addEventListener('submit', (e) => {
     
     const formData = new FormData(form);
     
-    const user = {
-        name: formData.get('username'),
-        pokemon: formData.get('starters'),
-        hp: 100,
-        willpower: 10,
-        completed: {}
-    };
+    const userData = makeUser(formData);
     
-    const stringyUser = JSON.stringify(user);
-    localStorage.setItem('USER', stringyUser);
+    saveUser(userData);
     
-    window.location = '../maps';
+    window.location = '../maps.index.html';
 });

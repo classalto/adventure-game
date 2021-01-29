@@ -8,3 +8,8 @@ export function makeUser(formData) {
     };
     return user;
 }
+
+export function saveUser(data) {
+    const stringyUser = JSON.stringify(data);
+    localStorage.setItem('USER', stringyUser);
+}
